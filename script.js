@@ -43,19 +43,19 @@ $(document).ready(function () {
                             '</div>\n' +
                             '</div>\n' +
                             '</article>'
-                            var jqueryWrapper=$(template);
-                            array.push(jqueryWrapper);
+                        var jqueryWrapper = $(template);
+                        array.push(jqueryWrapper);
                     });
-                    array.forEach(function(item){
+                    array.forEach(function (item) {
                         item.appendTo("#articles");
                     });
                 }
             });
 
 
-        };
+        }
+        ;
     });
-
 
 
 });
