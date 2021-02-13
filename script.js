@@ -51,10 +51,8 @@ $(document).ready(function () {
                     });
                 }
             });
-
-
         }
-        ;
+
     });
 
 
