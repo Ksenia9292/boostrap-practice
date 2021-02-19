@@ -1,32 +1,46 @@
 $(document).ready(function () {
+$(".dropdown").hover(function(){
+    $(".dropdown-menu").toggle();
+});
 
-    $("a").click(function () {
-        $(this).toggleClass('clicked');
-    });
+$(".form-control").hide()
+$(".fa-search").click(function(){
+    $(".form-control").show("slow")
+ 
+})
 
-    $("button[type='submit']").click(function () {
-        alert('not found');
-    });
+// $("#myCarousel").carousel();
+$(".carousel-control-next").on("click", function(){
+  var currentImage = $(".active");
+  var nextImage=currentImage.next();
+  if(nextImage.length){
+      currentImage.removeClass(".active").css("z-index", -10);
+      nextImage.addClass(".active").css("z-index",)
+  }
+});
 
-    $(".author img").click(function () {
-        $(this).animate({
-            height: "100px"
-        }, 1000)
-    });
 
-    $(".hero-post img").click(function () {
-        $(this).attr('src', './img/imgchange.png')
-    });
+
+
+
+
+
+
+
 
     var preventLoad = false
 
-    $(document).on('scroll', function () {
-        if ($(document).height() - ($(document).height() * 0.5) < $(document).scrollTop() && !preventLoad) {
-            preventLoad = true
-            getPosts()
-        }
+    // $(document).on('scroll', function () {
+    //     if ($(document).height() - ($(document).height() * 0.5) < $(document).scrollTop() && !preventLoad) {
+    //         preventLoad = true
+    //         getPosts()
+    //     }
+    // })
+    $(".btn-info").click(function () {
+        preventLoad = true
+        getPosts()
+     
     })
-
     function getPosts() {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/posts',
@@ -58,6 +72,7 @@ $(document).ready(function () {
                     item.appendTo("#articles");
                 })
                 preventLoad = false
+               
             }
         });
     }
