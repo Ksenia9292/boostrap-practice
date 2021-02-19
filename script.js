@@ -3,10 +3,15 @@ $(document).ready(function () {
         $(".dropdown-menu").toggle();
     });
 
-    $(".form-control").hide()
+
     $(".fa-search").click(function () {
         $(".form-control").show("slow")
+        $('#search_close').show("slow")
+    })
 
+    $('#search_close').click(function () {
+        $(this).hide("slow")
+        $(".form-control").hide("slow")
     })
 
 
