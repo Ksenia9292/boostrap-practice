@@ -10,14 +10,19 @@ $(".fa-search").click(function(){
 })
 
 // $("#myCarousel").carousel();
-$(".carousel-control-next").on("click", function(){
-  var currentImage = $(".active");
-  var nextImage=currentImage.next();
-  if(nextImage.length){
-      currentImage.removeClass(".active").css("z-index", -10);
-      nextImage.addClass(".active").css("z-index",)
-  }
-});
+
+//   var currentImage = $(".active");
+//   var nextImage=currentImage.next();
+//   if(nextImage.length){
+//       currentImage.removeClass(".active").css("z-index", -10);
+      
+
+
+
+// $(".carousel-control-next").on("click", function(){
+//     $(".carousel-item img").attr("src", "https://lh3.googleusercontent.com/proxy/h-SWhVQYEYPoX2ZgJaDcw2KdbAdO2-a_-qGO6R3kEwdBhc8NZ596wXL9hWVGLVtl9B1Or7prsD686hyE1bkeXMEyQHHGoCtdJUbvVtsP0CVW2ATt8FWE9wPfDK-QTaw4vSWeSfc8ke8Jdi_WkuOmvjQ");
+// });
+
 
 
 
