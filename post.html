@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLog_article</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./post.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="article">
+        <nav class="navbar navbar-expand-lg navbar fixed-top">
+            <div class="container-fluid col-lg-10">
+                <a class="navbar-brand" href="/">Travel Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Destinations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Europe</a>
+                                <a class="dropdown-item" href="#">America</a>
+                                <a class="dropdown-item" href="#">Africa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogging Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                    </ul>
+
+                    <div class="social-links col-lg-4 d-flex justify-content-start align-items-center">
+                        <a href="https://www.facebook.com/facebook" target="_blank" class="social-links  w-100"><i
+                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="social-links w-100"> <i
+                                class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" class="social-links w-100"><i
+                                class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <form class="form-inline" style="flex-wrap: nowrap;">
+                            <input class="form-control" type="search" style="display: none;" placeholder="Search"
+                                aria-label="Search">
+                            <a href="#"><i class="fa fa-search m-3" aria-hidden="true"></i></a>
+                            <a href="#" style="display: none" id="search_close"><i class="fa fa-times m-3"
+                                    aria-hidden="true"></i></a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </nav>
+
+    <div class="bigBanner" style="height: 600px" pt="150px">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="col-4">
+                        <h1>Iceland</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="article">
+        <div class="container">
+            <div class="newArticle" id="newArticle">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

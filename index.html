@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog template</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Header section -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top">
+        <div class="container-fluid col-lg-10">
+            <a class="navbar-brand" href="/">Travel Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="blog.html">Europe</a>
+                            <a class="dropdown-item" href="#">America</a>
+                            <a class="dropdown-item" href="#">Africa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogging Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                </ul>
+
+                <div class="social-links col-lg-4 d-flex justify-content-start align-items-center">
+                    <a href="https://www.facebook.com/facebook" target="_blank" class="social-links  w-100"><i
+                            class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="social-links w-100"> <i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-links w-100"><i
+                            class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <form class="form-inline" style="flex-wrap: nowrap;">
+                        <input class="form-control" type="search" style="display: none;" placeholder="Search"
+                            aria-label="Search">
+                        <a href="#"><i class="fa fa-search m-3" aria-hidden="true"></i></a>
+                        <a href="#" style="display: none" id="search_close"><i class="fa fa-times m-3"
+                                aria-hidden="true"></i></a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ">
+                    <div class="hero-post shadow h-100">
+
+                        <div class="carousel slide" id="my_carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active h-100">
+
+                                    <div class="w-100 h-100" style="background: url('https://www.pandotrip.com/wp-content/uploads/2017/10/How-to-Choose-the-Best-Travel-Backpack-for-Women-6.jpg')  0 0 no-repeat;
+                                      background-size:cover;
+                                        min-height: 500px;">
+
+                                    </div>
+                                    
+                                    <div class="hero-post-badges text-center">
+                                        <a class="p-2  mb-2 mt-3" href="#">
+                                            <i class="mr-1 fa fa-calendar-o" aria-hidden="true"></i>
+                                            15March 2020
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <div class="w-100 "
+                                        style="background: url('./img/image4.jpg')  0 0 no-repeat; background-size:cover; min-height: 500px;">
+                                    </div>
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <div class="w-100"
+                                        style="background: url('./img/image3.jpg')  0 0 no-repeat; background-size:cover; min-height: 500px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#my_carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#my_carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a href=""> <img src="./img/heropostcontent.jpg" alt=""
+                                            class="img-fluid rounded-circle mb-4"></a>
+                                </div>
+                                <div class="col-md-10">
+                                    <a href="#">
+                                        <h2>My Blog post</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-self-baseline justify-content-center">
+                    <div class="hero-post shadow mb-2">
+                        <a href="./blog.html" class="d-block">
+                            <img src="./img/image2.jpg" alt="" class="img-fluid heigh:auto">
+                        </a>
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2 mt-3" href="./blog.html">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                15March 2020
+                            </a>
+
+                        </div>
+
+                        <div class="hero-post-content">
+
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="#">
+                                        <img src="./img/heropostcontent.jpg" alt="" class="img-fluid rounded-circle">
+                                    </a>
+                                </div>
+                                <div class="col-sm-9">
+                                    <a href="#">
+                                        <h3>My Blog post</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-post shadow">
+                        <a href="#" class="d-block">
+                            <img src="./img/image3.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="hero-post-badges text-center">
+                            <a class="p-2 px-3 mb-2" href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>15March
+                                2020</a>
+                        </div>
+
+                        <div class="hero-post-content">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href=""> <img src="./img/heropostcontent.jpg" alt=""
+                                            class="img-fluid rounded-circle"></a>
+                                </div>
+                                <div class="col-sm-9">
+                                    <a href="#">
+                                        <h3>My Blog post</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Main Block section -->
+    <section class="blog-posts py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="articles">
+                        <article class="blog-post mb-3 shadow">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="#"><img class="img-fluid" src="img/image4.jpg" alt=""></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="#">
+                                        <h3 class="m-0 mt-2">My blog post title foo bar</h3>
+                                    </a>
+                                    <p class="m-0 nt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                        commodo laoreet
+                                        metus
+                                        sit amet condimentum. Nullam placerat neque leo, vel bibendum orci efficitur ac.
+                                    </p>
+                                    <div class="badge">
+                                        <a href="#">About me</a>
+                                        <a href="#">Travelling</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-post mb-3 shadow">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href=""><img class="img-fluid" src="img/image4.jpg" alt=""></a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="">
+                                        <h3 class="m-0 mt-2">My blog post title foo bar</h3>
+                                    </a>
+                                    <p class="m-0 nt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                        commodo laoreet
+                                        metus
+                                        sit amet condimentum. Nullam placerat neque leo, vel bibendum orci efficitur ac.
+                                    </p>
+
+
+                                    <div class="badge">
+                                        <a href="#">About me</a>
+                                        <a href="#">Travelling</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <article class="blog-post mb-3 shadow">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="img/image4.jpg" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="m-0 mt-2">My blog post title foo bar</h3>
+                                    <p class="m-0 nt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                        commodo laoreet
+                                        metus
+                                        sit amet condimentum. Nullam placerat neque leo, vel bibendum orci efficitur ac.
+                                    </p>
+                                    <div class="badge">
+                                        <a href="#">About me</a>
+                                        <a href="#">Travelling</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+                        <div class="article" id="article"></div>
+                        <article class="blog-post mb-3 shadow">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="img/image4.jpg" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="m-0 mt-2">My blog post title foo bar</h3>
+                                    <p class="m-0 nt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                        commodo laoreet
+                                        metus
+                                        sit amet condimentum. Nullam placerat neque leo, vel bibendum orci efficitur ac.
+                                    </p>
+                                    <div class="badge">
+                                        <a href="#">About me</a>
+                                        <a href="#">Travelling</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+                        <article class="blog-post mb-3 shadow">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="img/image4.jpg" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="m-0 mt-2">My blog post title foo bar</h3>
+                                    <p class="m-0 nt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                                        commodo laoreet
+                                        metus
+                                        sit amet condimentum. Nullam placerat neque leo, vel bibendum orci efficitur ac.
+                                    </p>
+                                    <div class="badge">
+                                        <a href="#">About me</a>
+                                        <a href="#">Travelling</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                    <button type="button" class="btn btn-info">More articles</button>
+                </div>
+                <aside class="col-md-4 px-4">
+                    <a href="#">
+                        <h4 class="aside-heading mt-4 mb-3 pl-2">Popular Author </h4>
+                    </a>
+                    <article class="row author mb-3">
+                        <div class="col-sm-4">
+                            <a href=""><img
+                                    src="https://www.theglobeandmail.com/resizer/ZTY0dRYn2x4dgSkwSPG-nyIjflU=/620x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/5HSZVXDII5BRRHH4S6KE4WZ7RE.jpg"
+                                    alt="" class="img-fluid rounded-circle"></a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="">
+                                <h5 class="m-0">Joe Doe</h5>
+                            </a>
+                            <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing..</p>
+                            <div class="author-social-links">
+                                <a href="https://www.facebook.com"><i class="fa fa-facebook-official"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com"><i class="fa fa-youtube-play"
+                                        aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="row author mb-3">
+                        <div class="col-sm-4">
+                            <a href="#"> <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Michelle_Obama_official_portrait_headshot.jpg/375px-Michelle_Obama_official_portrait_headshot.jpg"
+                                    alt="" class="img-fluid rounded-circle"></a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="#">
+                                <h5 class="m-0">Joe Doe</h5>
+                            </a>
+                            <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing..</p>
+                            <div class="author-social-links">
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"
+                                        aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="row author mb-3">
+                        <div class="col-sm-4">
+                            <a href="#"><img
+                                    src="https://www.dailypioneer.com/uploads/2020/story/images/big/barack-obama-to-hold-first-in-person-event-for-biden-2020-10-21.jpg"
+                                    alt="" class="img-fluid rounded-circle"></a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="">
+                                <h5 class="m-0">Joe Doe</h5>
+                            </a>
+                            <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing..</p>
+                            <div class="author-social-links">
+                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="row author mb-3">
+                        <div class="col-sm-4">
+                            <a href="#"><img
+                                    src="https://www.dailypioneer.com/uploads/2020/story/images/big/barack-obama-to-hold-first-in-person-event-for-biden-2020-10-21.jpg"
+                                    alt="" class="img-fluid rounded-circle"></a>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="#">
+                                <h5 class="m-0">Joe Doe</h5>
+                            </a>
+                            <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing..</p>
+                            <div class="author-social-links">
+                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <h4 class="aside-heading mt-4 mb-3 pl-2">Popular Categories</h4>
+                    <div class="badges w-100">
+                        <a href="#">Technology</a>
+                        <a href="#">Programming</a>
+                        <a href="#">HTML</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">Boostrap</a>
+                        <a href="#">Programming</a>
+                        <a href="#">HTML</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer Section -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="footer-logo" href="#">Blogg</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tenetur optio!</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact US</a></li>
+                        <li><a href="#">Newsletter</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Newsletter</h4>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-main rounded-0 btn-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="w-100 text-center">
+                <p>Made by <a>Ksusha</a> &copy; 2020. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

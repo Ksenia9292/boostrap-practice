@@ -1,0 +1,29 @@
+{
+  "name": "boostrap-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ksenia9292/boostrap-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ksenia9292/boostrap-practice/issues"
+  },
+  "homepage": "https://github.com/Ksenia9292/boostrap-practice#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.6.0",
+    "carousel": "0.0.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.14.3",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6"
+  }
+}
