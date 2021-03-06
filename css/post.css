@@ -2,5 +2,19 @@
     background-image: url("https://media.nomadicmatt.com/icelandguide.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: -1;
+    position: relative;
 
+}
+
+.name {
+    position: absolute;
+    bottom: 200px;
+    left: 600px;
+    
+
+}
+
+.name h1 {
+    color: white;
 }

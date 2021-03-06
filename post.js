@@ -4,7 +4,7 @@ function getPostById(postID) {
         url: 'https://jsonplaceholder.typicode.com/posts',
         type: "GET",
         success: function (data) {
-            console.log(data)
+         
             var template = $("<article class=\"blog-post mb-3 shadow\">\n" +
                 "                    <div class=\"row\">\n" +
                 "                        <div class=\"col-sm-4\">\n" +
@@ -14,8 +14,8 @@ function getPostById(postID) {
                 "                            <h3 class=\"m-0 mt-2\">" + data.title + "</h3>\n" +
                 "                            <p class=\"m-0 nt-2\">" + data.body + "</p>\n" +
                 "                            <div class=\"badge\">\n" +
-                "                                   <a href=\"/blog.html?id=" + data.id + "\">About me</a>\n" +
-                "                                <a href=\"#\">Travelling</a>\n" +
+                "                                   <a href=\"#\">About me</a>\n" +
+                "                                   <a href=\"#\">Travelling</a>\n" +
                 "\n" +
                 "                            </div>\n" +
                 "                        </div>\n" +
