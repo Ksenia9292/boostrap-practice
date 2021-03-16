@@ -2,19 +2,24 @@
     background-image: url("https://media.nomadicmatt.com/icelandguide.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: -1;
     position: relative;
-
 }
 
 .name {
     position: absolute;
-    bottom: 200px;
+    bottom: 500px;
     left: 600px;
-    
-
 }
 
 .name h1 {
     color: white;
+}
+
+.form-row {
+    background-color: rgb(18, 18, 19);
+}
+
+.form-row h1{
+    color:white;
+  
 }

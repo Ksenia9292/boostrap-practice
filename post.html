@@ -23,82 +23,105 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./post.js"></script>
     <script src="./script.js"></script>
+    
+
+
 
 </head>
 
 <body>
-    <div class="article">
-        <nav class="navbar navbar-expand-lg navbar fixed-top">
-            <div class="container-fluid col-lg-10">
-                <a class="navbar-brand" href="/">Travel Blog</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Destinations
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Europe</a>
-                                <a class="dropdown-item" href="#">America</a>
-                                <a class="dropdown-item" href="#">Africa</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blogging Tips</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Photography</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Travel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Community</a>
-                        </li>
-                    </ul>
+    <div class="container" style="min-height: 100vh;">
+        <div class="article">
+            <nav class="navbar navbar-expand-lg navbar fixed-top">
+                <div class="container-fluid col-lg-10">
+                    <a class="navbar-brand" href="/">Travel Blog</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Destinations
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Europe</a>
+                                    <a class="dropdown-item" href="#">America</a>
+                                    <a class="dropdown-item" href="#">Africa</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blogging Tips</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Photography</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                            </li>
+                        </ul>
 
-                    <div class="social-links col-lg-4 d-flex justify-content-start align-items-center">
-                        <a href="https://www.facebook.com/facebook" target="_blank" class="social-links  w-100"><i
-                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/" target="_blank" class="social-links w-100"> <i
-                                class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank" class="social-links w-100"><i
-                                class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        <form class="form-inline" style="flex-wrap: nowrap;">
-                            <input class="form-control" type="search" style="display: none;" placeholder="Search"
-                                aria-label="Search">
-                            <a href="#"><i class="fa fa-search m-3" aria-hidden="true"></i></a>
-                            <a href="#" style="display: none" id="search_close"><i class="fa fa-times m-3"
-                                    aria-hidden="true"></i></a>
-                        </form>
+                        <div class="social-links col-lg-4 d-flex justify-content-start align-items-center">
+                            <a href="https://www.facebook.com/facebook" target="_blank" class="social-links  w-100"><i
+                                    class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="social-links w-100"> <i
+                                    class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" class="social-links w-100"><i
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <form class="form-inline" style="flex-wrap: nowrap;">
+                                <input class="form-control" type="search" style="display: none;" placeholder="Search"
+                                    aria-label="Search">
+                                <a href="#"><i class="fa fa-search m-3" aria-hidden="true"></i></a>
+                                <a href="#" style="display: none" id="search_close"><i class="fa fa-times m-3"
+                                        aria-hidden="true"></i></a>
+                            </form>
 
+                        </div>
                     </div>
-                </div>
-            </div>
-    </div>
-    </nav>
-
-    <div class="bigBanner" style="height: 600px" pt="150px">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="name">
+                </div>\
+            </nav>
+        </div>
+        <div class="bigBanner" style="height:400px">
+        </div>
+        <div class="container">
+            <div class="name text-center mb-3">
                 <h1>Iceland</h1>
             </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minima quisquam maiores accusantium asperiores, facere animi, provident amet quam sapiente laborum voluptatibus explicabo nesciunt voluptate blanditiis natus recusandae deleniti impedit eligendi! Id obcaecati eaque voluptatem dicta atque illo doloremque quibusdam deserunt, unde nam impedit in magnam neque, possimus vitae nulla cupiditate corrupti? Voluptas nisi corrupti eos aliquid ipsum magni dolorum pariatur veniam veritatis in, sint at, impedit reiciendis est aperiam doloremque. Enim consequuntur fugiat pariatur, illum atque reprehenderit alias similique ex libero dolorem aliquid, sunt officia repellat et nisi quasi, eligendi illo repudiandae obcaecati maxime quod hic temporibus voluptatem tempora. Repellendus laudantium iste enim reprehenderit eaque cumque, deleniti pariatur repellat! Deserunt vero accusantium, omnis facilis ab voluptatem excepturi nostrum fugiat facere dolores dolore esse perferendis nam dolor pariatur! Distinctio veritatis sunt odio minima laudantium et excepturi maxime. Odit debitis excepturi optio natus totam ipsa laboriosam veniam, modi sit recusandae voluptate eos nihil placeat ea molestiae pariatur id inventore itaque provident quas at sunt praesentium? Distinctio, soluta alias. Delectus temporibus dolor quibusdam? Et facilis vero autem maiores. Itaque veniam dignissimos temporibus nesciunt, laboriosam mollitia voluptas qui quae at porro, voluptate beatae, culpa impedit excepturi eaque atque blanditiis enim magnam. Nam, ratione?</p>
+
         </div>
+        <form>
+
+            <div class="form-row mt-5 d-flex justify-content-center align-items-between">
+                <div class="col-md-5">
+                    <h1>Get my best stuff sent straight to you</h1>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <input type="text" class="form-control" placeholder="Your name">
+                </div>
+                <div class="col-md-2 mt-3">
+                    <input type="text" class="form-control" id="email" class="email" placeholder="Email">
+                    
+                        <button type="submit" id="submit" class="btn btn-success mt-2">Send</button>
+                      </div>
+
+                </div>
+            </div>
+        </form>
+        
     </div>
     <div class="article">
         <div class="container">
             <div class="newArticle" id="newArticle">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatum magnam saepe, ipsa voluptate ipsum repudiandae vero porro aliquid itaque optio, omnis vel. Optio, ut aut adipisci quos nihil voluptas!</p>
+
             </div>
         </div>
+    </div>
     </div>
 </body>
 

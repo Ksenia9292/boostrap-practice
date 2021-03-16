@@ -42,7 +42,7 @@ $(document).ready(function () {
                         "                            <h3 class=\"m-0 mt-2\">" + item.title + "</h3>\n" +
                         "                            <p class=\"m-0 nt-2\">" + item.body + "</p>\n" +
                         "                            <div class=\"badge\">\n" +
-                        "                                <a href=\"/blog.html?id=" + item.id + "\">About me</a>\n" +
+                        "                                <a href=\"/post.html?id=" + item.id + "\">About me</a>\n" +
                         "                                <a href=\"#\">Travelling</a>\n" +
                         "\n" +
                         "                            </div>\n" +
