@@ -1,0 +1,19 @@
+.bigBanner {
+    background-image: url("https://www.investopedia.com/thmb/iLuRLQp_9cuv-WHbZYcgIUTjuK0=/2189x1369/filters:fill(auto,1)/GettyImages-966223936-1651cc0ded784ff2bac31e1c8f835a6f.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+   
+}
+
+.name {
+    position: absolute;
+    bottom: 200px;
+    left: 700px;
+}
+
+.name h1{
+    color: white;
+}
+
+ 

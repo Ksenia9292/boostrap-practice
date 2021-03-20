@@ -1,0 +1,21 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #66fcf1;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    color: #66fcf1;
+}
+
+a {
+    color: #66fcf1;
+    cursor: pointer;
+}

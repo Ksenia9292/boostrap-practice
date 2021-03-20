@@ -25,9 +25,9 @@ input {
     color: #66fcf1 !important;
 }
 
-input, input::-webkit-input-placeholder {
-    letter-spacing: 5px;
-}
+/* input, input::-webkit-input-placeholder {
+    letter-spacing: 1px;
+} */
 
 img {
     filter: grayscale(50%) brightness(0.8);
@@ -213,7 +213,3 @@ img.rounded-circle {
     background-color:#1f2833 ;
 }
 
-.btn-outline-success {
-    
-    
-}
