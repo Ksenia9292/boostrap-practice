@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-transform: capitalize;
+    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1)
+}
+
+.gallery {
+    min-height: 100vh;
+    background-color: #eee;
+    padding-bottom: 100px;
+}
+
+.gallery .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   list-style: none;
+   padding: 20px 0;
+}
+.gallery .controls .buttons{
+    height: 40px;
+    width: 140px;
+    background-color: #fff;
+    color:#666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.gallery .controls .buttons.active {
+    background: coral;
+    color: #fff
+}
+
+.gallery .imageContainer  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.gallery .imageContainer img{
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin: 20px;
+    object-fit: cover;
+}
+
+.gallery .imageContainer img:hover {
+    transform:scale(1.4)
+}
+

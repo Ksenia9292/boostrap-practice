@@ -1,19 +1,21 @@
-.bigBanner {
-    background-image: url("https://www.investopedia.com/thmb/iLuRLQp_9cuv-WHbZYcgIUTjuK0=/2189x1369/filters:fill(auto,1)/GettyImages-966223936-1651cc0ded784ff2bac31e1c8f835a6f.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-   
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
-.name {
-    position: absolute;
-    bottom: 200px;
-    left: 700px;
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #66fcf1;
 }
 
-.name h1{
-    color: white;
+h3 {
+    font-size: 1.5rem;
 }
 
- 
+h5 {
+    color: #66fcf1;
+}
+
+a {
+    color: #66fcf1;
+    cursor: pointer;
+}
